@@ -67,14 +67,14 @@ const main = () => {
         readStdIn()
         break
     }
-    
-    // If not in stdin mode, exit here    
-    if(!argv.std && !argv.e) {
-      console.log("No input method specified. Either use -e or --std.")
-      console.log("See leetscript-cli -u for usage information")
-      exit(1)
-    }
   })
+
+  // If not in stdin mode, exit here    
+  if(!argv.std && !argv.e) {
+    console.log("No input method specified. Either use -e or --std.")
+    console.log("See leetscript-cli -u for usage information")
+    exit(1)
+  }
 }
 
 main()
