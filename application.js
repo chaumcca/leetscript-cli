@@ -9,6 +9,7 @@ module.exports = {
     -u            show usage and exit
     -h            show help and exit
     -v            show version and exit
+    --std         read input from stdin
     `,
 
   help: `

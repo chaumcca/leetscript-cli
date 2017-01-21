@@ -38,3 +38,24 @@ Pipe output to a file
 ```
 $ leetscript-cli "test" > test.txt
 ```
+
+Read from `stdin`
+```
+$ echo "test" | leetscript-cli -s --std
+7357
+# Multi line
+$ cat << EOF | leetscript-cli --std
+lorem ipsum dolor sit
+This is a multi line test
+hello world!
+EOF
+
+|_()23]V[ 1|>$|_|m |]01[]|2 $][+
+T4][$ |5 /\ m[_]|_7| 1i|\|3 735†
+|-|311() \\'[]|2|_|)!
+```
+
+Read in a file with `cat` and `stdin`
+```
+$ cat my_file.txt | leetscript-cli --std
+```
